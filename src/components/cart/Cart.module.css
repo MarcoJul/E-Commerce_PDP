@@ -1,0 +1,28 @@
+.cart {
+  background-color: #fff;
+  width: 40rem;
+  height: 30rem;
+  position: absolute;
+  top: 150%;
+  right: -20rem;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.titleCart {
+  padding: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.6rem;
+  border-bottom: 1px solid hsl(220, 14%, 75%);
+}
+
+.cartContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 4;
+}

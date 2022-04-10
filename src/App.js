@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import "./App.module.css";
-import Header from "./components/Header";
+import Header from "./components/headers/Header";
 
 const App = () => {
   return (

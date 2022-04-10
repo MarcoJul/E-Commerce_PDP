@@ -6,7 +6,7 @@
   margin: 0 10%;
   gap: 6rem;
   color: hsl(219, 9%, 45%);
-  border-bottom: 1px solid hsl(26, 100%, 55%);
+  border-bottom: 1px solid hsl(220, 14%, 75%);
 }
 
 .navigation {
@@ -56,12 +56,16 @@ nav {
 }
 
 .cartIcon {
-  cursor: pointer;
-  transition: all 0.4s;
-  color: hsl(219, 9%, 45%);
+  position: relative;
 }
 
-.cartIcon:hover {
+.cartBtn {
+  transition: all 0.4s;
+  color: hsl(219, 9%, 45%);
+  cursor: pointer;
+}
+
+.cartBtn:hover {
   transition: all 0.4s;
   color: hsl(220, 13%, 13%);
 }
