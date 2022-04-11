@@ -1,13 +1,15 @@
 import { Fragment } from "react";
+import { useMediaQuery } from "react-responsive";
 import "./App.module.css";
 import Header from "./components/headers/Header";
+import HeaderMobile from "./components/headers/HeaderMobile";
 
 const App = () => {
-  return (
-    <Fragment>
-      <Header />
-    </Fragment>
-  );
+  const isMobile = useMediaQuery({
+    query: "(max-width:1050px)",
+  });
+
+  return <Fragment>{isMobile ? <HeaderMobile /> : <Header />}</Fragment>;
 };
 
 export default App;

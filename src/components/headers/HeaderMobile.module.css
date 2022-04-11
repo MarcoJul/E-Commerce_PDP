@@ -1,0 +1,55 @@
+.headerMobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+  padding: 0 2rem;
+  border-bottom: 1px solid hsl(220, 14%, 75%);
+}
+
+.cartIcon {
+  position: relative;
+}
+
+.userNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.userIcon {
+  height: 4rem;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.navList {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 65vw;
+  background-color: hsl(0, 0%, 100%);
+  transform: translateX(-100%);
+  transition: all 0.5s;
+  padding: 2rem 0 0 2rem;
+}
+
+.close {
+  margin-bottom: 3rem;
+}
+
+.navigation {
+  list-style-type: none;
+}
+
+.navLink {
+  margin-bottom: 2.5rem;
+}
+
+.translate {
+  transition: all 0.5s;
+  transform: translateX(0);
+}

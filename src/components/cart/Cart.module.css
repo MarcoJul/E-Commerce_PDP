@@ -1,7 +1,8 @@
 .cart {
   background-color: #fff;
   width: 40rem;
-  height: 30rem;
+  min-height: 30rem;
+  max-height: 90rem;
   position: absolute;
   top: 150%;
   right: -20rem;
@@ -25,4 +26,13 @@
   align-items: center;
   justify-content: center;
   flex-grow: 4;
+}
+
+@media screen and (max-width: 1050px) {
+  .cart {
+    width: 93.5vw;
+    top: 6rem;
+    right: -6.7rem;
+    border-radius: 10px;
+  }
 }

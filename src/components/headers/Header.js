@@ -29,8 +29,8 @@ const Header = () => {
         </ul>
       </nav>
       <div className={classes.userNav}>
-        <div className={classes.cartIcon} onClick={cartShowHandler}>
-          <div className={classes.cartBtn}>
+        <div className={classes.cartIcon}>
+          <div className={classes.cartBtn} onClick={cartShowHandler}>
             <CartIcon />
           </div>
           {cartShow && <Cart />}
