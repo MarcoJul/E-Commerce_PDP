@@ -1,0 +1,52 @@
+.content {
+  width: 50%;
+}
+
+.company {
+  font-size: 1.5rem;
+  color: hsl(26, 100%, 55%);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1.5px;
+}
+
+.productName {
+  font-size: 4.5rem;
+  margin-bottom: 4rem;
+}
+
+.productText {
+  color: hsl(220, 14%, 75%);
+  line-height: 3rem;
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+  font-weight: 400;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.finalPrice {
+  font-size: 2.5rem;
+}
+
+.discount {
+  background-color: hsl(25, 100%, 94%);
+  color: hsl(26, 100%, 55%);
+  padding: 0.2rem 1rem;
+  font-size: 1.4rem;
+  border-radius: 5px;
+}
+
+.previousPrice {
+  color: hsl(220, 14%, 75%);
+  text-decoration-line: line-through;
+  font-size: 1.6rem;
+  font-weight: 700;
+}

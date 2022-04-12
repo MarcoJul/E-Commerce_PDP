@@ -1,0 +1,6 @@
+.main {
+  display: flex;
+  margin: 0 10%;
+  gap: 10rem;
+  padding: 10rem 5rem;
+}

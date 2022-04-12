@@ -1,0 +1,29 @@
+.imageBox {
+  width: 50%;
+}
+
+.bigImageBox {
+  margin-bottom: 2rem;
+}
+
+.mainImage {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.sectionThumbs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sectionThumbs img {
+  width: 22%;
+  border-radius: 10px;
+}
+
+.activeThumb {
+  border: 2px solid hsl(26, 100%, 55%);
+}
+.activeThumb img {
+  filter: opacity(30%);
+}
