@@ -12,10 +12,6 @@ import { ReactComponent as CloseMenu } from "../../images/icon-close.svg";
 
 import classes from "./HeaderMobile.module.css";
 
-const Backdrop = () => {
-  return <div></div>;
-};
-
 const HeaderMobile = () => {
   const [cartShow, setCartShow] = useState(false);
 
@@ -30,9 +26,14 @@ const HeaderMobile = () => {
     setCartShow(false);
   };
 
+  const backdrop = ReactDOM.createPortal(
+    <div className={`${classes.backdrop} ${menuShow ? classes.translateBackdrop : ""}`}></div>,
+    document.getElementById("backdrop")
+  );
+
   return (
     <header className={classes.headerMobile}>
-      {ReactDOM.createPortal(<Backdrop />, document.getElementById("backdrop"))}
+      {backdrop}
       <div className={classes.hamburger} onClick={closeHandler}>
         <Hamburger />
       </div>
