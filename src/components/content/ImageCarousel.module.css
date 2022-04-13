@@ -14,16 +14,19 @@
 .sectionThumbs {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .sectionThumbs img {
   width: 22%;
   border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+.selection {
 }
 
 .activeThumb {
-  border: 2px solid hsl(26, 100%, 55%);
-}
-.activeThumb img {
   filter: opacity(30%);
+  transition: all 0.5s;
 }
