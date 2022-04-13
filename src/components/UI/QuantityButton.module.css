@@ -1,0 +1,20 @@
+.quantityButton {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  height: 5rem;
+  background-color: hsl(223, 64%, 98%);
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity {
+  font-weight: 700;
+}

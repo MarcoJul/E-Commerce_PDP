@@ -9,6 +9,7 @@
 .mainImage {
   width: 100%;
   border-radius: 15px;
+  cursor: pointer;
 }
 
 .sectionThumbs {
@@ -21,12 +22,10 @@
   width: 22%;
   border-radius: 10px;
   border: 2px solid transparent;
-}
-
-.selection {
+  cursor: pointer;
 }
 
 .activeThumb {
   filter: opacity(30%);
-  transition: all 0.5s;
+  transition: all 1s;
 }

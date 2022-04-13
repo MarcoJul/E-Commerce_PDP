@@ -1,3 +1,6 @@
+import Button from "../UI/Button";
+import QuantityButton from "../UI/QuantityButton";
+
 import classes from "./ProductContent.module.css";
 
 const ProductContent = () => {
@@ -14,6 +17,10 @@ const ProductContent = () => {
         <p className={classes.discount}>50%</p>
       </div>
       <p className={classes.previousPrice}>$250.00</p>
+      <div className={classes.actions}>
+        <QuantityButton />
+        <Button type="add" message="Add to cart" />
+      </div>
     </div>
   );
 };

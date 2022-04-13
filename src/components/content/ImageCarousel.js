@@ -26,7 +26,6 @@ const ImageCarousel = () => {
     }
   };
 
-  console.log(position);
   const style = {
     position: "absolute",
     top: "0",

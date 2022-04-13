@@ -49,4 +49,11 @@
   text-decoration-line: line-through;
   font-size: 1.6rem;
   font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

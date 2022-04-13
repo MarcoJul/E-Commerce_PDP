@@ -1,7 +1,14 @@
 import classes from "./Button.module.css";
 
+import { ReactComponent as CartIcon } from "../../images/icon-cart.svg";
+
 const Button = (props) => {
-  return <button className={classes.button}>{props.message}</button>;
+  return (
+    <button className={classes.button}>
+      {props.type === "add" && <CartIcon />}
+      {props.message}
+    </button>
+  );
 };
 
 export default Button;
