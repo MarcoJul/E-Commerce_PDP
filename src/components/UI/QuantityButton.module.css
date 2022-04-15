@@ -13,6 +13,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  height: 100%;
+  width: 5rem;
+  color: hsl(26, 100%, 55%);
+  transition: all 0.4s;
+}
+
+.button:hover {
+  transition: all 0.4s;
+  color: hsl(26, 80%, 50%);
 }
 
 .quantity {

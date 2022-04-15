@@ -1,5 +1,5 @@
 .header {
-  height: 15rem;
+  height: 12rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -63,6 +63,18 @@ nav {
   transition: all 0.4s;
   color: hsl(219, 9%, 45%);
   cursor: pointer;
+}
+
+.cartQuantity {
+  position: absolute;
+  top: -30%;
+  right: -30%;
+  background-color: hsl(26, 100%, 55%);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.1rem 0.8rem;
+  border-radius: 999px;
 }
 
 .cartBtn:hover {

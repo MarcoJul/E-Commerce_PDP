@@ -26,6 +26,21 @@
 }
 
 .activeThumb {
-  filter: opacity(30%);
-  transition: all 1s;
+  /* filter: opacity(30%); */
+  /* transition: all 1s; */
+  animation-name: opacity;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes opacity {
+  from {
+    filter: none;
+  }
+
+  to {
+    filter: opacity(30%);
+  }
 }

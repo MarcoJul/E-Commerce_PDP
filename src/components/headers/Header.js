@@ -32,6 +32,7 @@ const Header = () => {
         <div className={classes.cartIcon}>
           <div className={classes.cartBtn} onClick={cartShowHandler}>
             <CartIcon />
+            <span className={classes.cartQuantity}>{3}</span>
           </div>
           {cartShow && <Cart />}
         </div>
