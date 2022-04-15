@@ -29,6 +29,38 @@
   flex-grow: 4;
 }
 
+.productArea {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5%;
+  color: hsl(219, 9%, 45%);
+  gap: 1rem;
+}
+
+.productImage {
+  width: 5rem;
+  border-radius: 5px;
+}
+.productTitle {
+  font-size: 1.8rem;
+}
+
+.productPrice {
+  font-size: 1.8rem;
+  display: flex;
+}
+
+.totalPrice {
+  margin-left: 1rem;
+  font-weight: 700;
+}
+
+.button {
+  align-self: center;
+  margin-bottom: 3rem;
+}
+
 @media screen and (max-width: 1050px) {
   .cart {
     width: 93.5vw;
