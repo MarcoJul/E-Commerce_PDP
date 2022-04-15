@@ -3,6 +3,7 @@
   justify-content: space-around;
   align-items: center;
   width: 40%;
+  max-width: 16rem;
   height: 5rem;
   background-color: hsl(223, 64%, 98%);
 }
@@ -16,7 +17,7 @@
   cursor: pointer;
   height: 100%;
   width: 5rem;
-  color: hsl(26, 100%, 55%);
+  color: hsl(219, 9%, 45%);
   transition: all 0.4s;
 }
 

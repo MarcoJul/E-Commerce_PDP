@@ -35,6 +35,12 @@
   animation-iteration-count: 1;
 }
 
+.inactiveThumb {
+  animation-name: back-opacity;
+  animation-fill-mode: forwards;
+  animation-duration: 1.5s;
+}
+
 @keyframes opacity {
   from {
     filter: none;
@@ -42,5 +48,15 @@
 
   to {
     filter: opacity(30%);
+  }
+}
+
+@keyframes back-opacity {
+  from {
+    filter: opacity(30%);
+  }
+
+  to {
+    filter: none;
   }
 }

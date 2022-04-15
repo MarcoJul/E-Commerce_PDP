@@ -9,6 +9,7 @@
   justify-content: center;
   gap: 2rem;
   width: 20rem;
+  max-width: 25rem;
   height: 5rem;
   border-radius: 10px;
   cursor: pointer;

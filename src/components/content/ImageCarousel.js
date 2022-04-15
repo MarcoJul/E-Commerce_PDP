@@ -48,25 +48,25 @@ const ImageCarousel = () => {
         <img
           src={`/images/image-product-${1}-thumbnail.jpg`}
           alt="shoes-thumbnail"
-          className={mainImage === 1 ? classes.activeThumb : ""}
+          className={mainImage === 1 ? classes.activeThumb : classes.inactiveThumb}
           onClick={changeMainImageHandler.bind(this, 1)}
         />
         <img
           src={`/images/image-product-${2}-thumbnail.jpg`}
           alt="shoes-thumbnail"
-          className={mainImage === 2 ? classes.activeThumb : ""}
+          className={mainImage === 2 ? classes.activeThumb : classes.inactiveThumb}
           onClick={changeMainImageHandler.bind(this, 2)}
         />
         <img
           src={`/images/image-product-${3}-thumbnail.jpg`}
           alt="shoes-thumbnail"
-          className={mainImage === 3 ? classes.activeThumb : ""}
+          className={mainImage === 3 ? classes.activeThumb : classes.inactiveThumb}
           onClick={changeMainImageHandler.bind(this, 3)}
         />
         <img
           src={`/images/image-product-${4}-thumbnail.jpg`}
           alt="shoes-thumbnail"
-          className={mainImage === 4 ? classes.activeThumb : ""}
+          className={mainImage === 4 ? classes.activeThumb : classes.inactiveThumb}
           onClick={changeMainImageHandler.bind(this, 4)}
         />
       </div>
