@@ -61,6 +61,19 @@
   margin-bottom: 3rem;
 }
 
+.trashBtn {
+  color: hsl(219, 9%, 45%);
+
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.trashBtn:hover {
+  color: hsl(26, 80%, 50%);
+
+  transition: all 0.4s;
+}
+
 @media screen and (max-width: 1050px) {
   .cart {
     width: 93.5vw;
