@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useSelector } from "react-redux";
 
 import Cart from "../cart/Cart";
 
@@ -9,7 +10,7 @@ import { ReactComponent as CartIcon } from "../../images/icon-cart.svg";
 
 const Header = () => {
   const [cartShow, setCartShow] = useState(false);
-
+  const totalQuantity = useSelector((state) => state.cart.totalQuantity);
   const cartShowHandler = () => {
     setCartShow((previousCart) => !previousCart);
   };
@@ -32,7 +33,7 @@ const Header = () => {
         <div className={classes.cartIcon}>
           <div className={classes.cartBtn} onClick={cartShowHandler}>
             <CartIcon />
-            <span className={classes.cartQuantity}>{3}</span>
+            <span className={classes.cartQuantity}>{totalQuantity}</span>
           </div>
           {cartShow && <Cart />}
         </div>

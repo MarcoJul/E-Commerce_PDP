@@ -1,9 +1,36 @@
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { cartAction } from "../../store/cart";
+
 import Button from "../UI/Button";
 import QuantityButton from "../UI/QuantityButton";
 
 import classes from "./ProductContent.module.css";
 
 const ProductContent = () => {
+  const dispatch = useDispatch();
+  const [quantity, setQuantity] = useState(0);
+
+  //HANDLE QUANTITY SELECTED IN BUTTON
+
+  const quantityHandler = (type) => {
+    if (type === "increase") setQuantity((prevQuantity) => prevQuantity + 1);
+    if (type === "decrease" && quantity !== 0) {
+      setQuantity((prevQuantity) => prevQuantity - 1);
+    } else return;
+  };
+
+  //ADD ITEM IN CART
+  const addToCartHandler = () => {
+    if (!quantity) return;
+    dispatch(
+      cartAction.addItemToCart({
+        title: "Fall Limited Edition Sneakers",
+        quantity: +quantity,
+      })
+    );
+  };
+
   return (
     <div className={classes.content}>
       <p className={classes.company}>Sneaker Company</p>
@@ -18,8 +45,14 @@ const ProductContent = () => {
       </div>
       <p className={classes.previousPrice}>$250.00</p>
       <div className={classes.actions}>
-        <QuantityButton />
-        <Button type="add" message="Add to cart" />
+        <QuantityButton
+          value={quantity}
+          onIncrease={quantityHandler.bind(this, "increase")}
+          onDecrease={quantityHandler.bind(this, "decrease")}
+        />
+        <div onClick={addToCartHandler}>
+          <Button type="add" message="Add to cart" />
+        </div>
       </div>
     </div>
   );

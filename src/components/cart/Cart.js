@@ -1,43 +1,26 @@
 import classes from "./Cart.module.css";
 
-import Button from "../UI/Button";
+import { useSelector } from "react-redux";
 
-import { ReactComponent as TrashIcon } from "../../images/icon-delete.svg";
 import { Fragment } from "react";
+import CartItem from "./ CartItem";
 
 const Cart = () => {
-  let content = false;
+  const cartItems = useSelector((state) => state.cart.items);
 
   return (
     <div className={classes.cart}>
       <div className={classes.titleCart}>
         <h2>Cart</h2>
       </div>
-      {content ? (
+      {cartItems.length === 0 ? (
         <div className={classes.cartContent}>
           <p>Your Cart is Empty.</p>
         </div>
       ) : (
-        <Fragment>
-          <div className={classes.productArea}>
-            <img className={classes.productImage} src={`/images/image-product-${1}-thumbnail.jpg`} alt="product" />
-            <div>
-              <p className={classes.productTitle}>Fall Limited Edition Sneakers</p>
-              <div className={classes.productPrice}>
-                <p>
-                  $125.00 <span>{`x ${3}`}</span>
-                </p>
-                <p className={classes.totalPrice}>$375.00</p>
-              </div>
-            </div>
-            <div className={classes.trashBtn}>
-              <TrashIcon />
-            </div>
-          </div>
-          <div className={classes.button}>
-            <Button message="Checkout" />
-          </div>
-        </Fragment>
+        cartItems.map((item) => (
+          <CartItem key={item.id} img={item.img} quantity={item.quantity} price={+item.price} title={item.title} />
+        ))
       )}
     </div>
   );
