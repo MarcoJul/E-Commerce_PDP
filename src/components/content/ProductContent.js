@@ -9,7 +9,7 @@ import classes from "./ProductContent.module.css";
 
 const ProductContent = () => {
   const dispatch = useDispatch();
-  const [quantity, setQuantity] = useState(0);
+  const [quantity, setQuantity] = useState(1);
 
   //HANDLE QUANTITY SELECTED IN BUTTON
 
@@ -29,6 +29,7 @@ const ProductContent = () => {
         quantity: +quantity,
       })
     );
+    setQuantity(1);
   };
 
   return (
