@@ -40,7 +40,6 @@
 
 .close {
   margin-bottom: 3rem;
-  cursor: pointer;
 }
 
 .navigation {
@@ -49,11 +48,6 @@
 
 .navLink {
   margin-bottom: 2.5rem;
-  cursor: pointer;
-}
-
-.navLink:hover {
-  font-weight: 700;
 }
 
 .translate {
