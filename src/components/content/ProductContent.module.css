@@ -58,3 +58,14 @@
   align-items: center;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 1050px) {
+  .content {
+    padding: 3rem;
+    width: 100%;
+  }
+  .company {
+    font-size: 1.4rem;
+    margin-top: 0;
+  }
+}

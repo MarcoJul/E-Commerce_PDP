@@ -1,0 +1,37 @@
+.sliderContainer {
+  position: relative;
+  overflow: hidden;
+  min-height: 35rem;
+}
+
+.actions {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 2rem;
+  margin-top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+.button {
+  background-color: hsl(0, 0%, 100%);
+  width: 4.5rem;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.imageSlider {
+  display: flex;
+  height: 100%;
+}
+
+.imageSlider img {
+  width: 100vw;
+  object-fit: cover;
+}
