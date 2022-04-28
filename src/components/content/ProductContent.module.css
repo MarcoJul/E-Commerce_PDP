@@ -68,4 +68,19 @@
     font-size: 1.4rem;
     margin-top: 0;
   }
+  .productName {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .productText {
+    color: hsl(220, 14%, 75%);
+    line-height: 2.5rem;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
 }
