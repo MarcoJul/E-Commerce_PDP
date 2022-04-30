@@ -2,7 +2,6 @@ import classes from "./Cart.module.css";
 
 import { useSelector } from "react-redux";
 
-import { Fragment } from "react";
 import CartItem from "./ CartItem";
 
 const Cart = () => {

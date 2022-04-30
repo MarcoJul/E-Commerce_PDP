@@ -22,6 +22,7 @@ const ProductContent = () => {
 
   //ADD ITEM IN CART
   const addToCartHandler = () => {
+    console.log("ciao");
     if (!quantity) return;
     dispatch(
       cartAction.addItemToCart({
@@ -53,7 +54,9 @@ const ProductContent = () => {
           onIncrease={quantityHandler.bind(this, "increase")}
           onDecrease={quantityHandler.bind(this, "decrease")}
         />
-        <Button type="add" message="Add to cart" onClick={addToCartHandler} />
+        <div onClick={addToCartHandler} className={classes.addButton}>
+          <Button type="add" message="Add to cart" />
+        </div>
       </div>
     </div>
   );

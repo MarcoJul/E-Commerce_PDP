@@ -60,6 +60,7 @@
 .button {
   align-self: center;
   margin-bottom: 3rem;
+  width: 90%;
 }
 
 .trashBtn {
