@@ -41,19 +41,19 @@ const ProductContent = () => {
         they'll withstand everything the weather can offer.
       </p>
       <div className={classes.price}>
-        <h3 className={classes.finalPrice}>$125.00</h3>
-        <p className={classes.discount}>50%</p>
+        <div className={classes.currentPrice}>
+          <h3 className={classes.finalPrice}>$125.00</h3>
+          <p className={classes.discount}>50%</p>
+        </div>
+        <p className={classes.previousPrice}>$250.00</p>
       </div>
-      <p className={classes.previousPrice}>$250.00</p>
       <div className={classes.actions}>
         <QuantityButton
           value={quantity}
           onIncrease={quantityHandler.bind(this, "increase")}
           onDecrease={quantityHandler.bind(this, "decrease")}
         />
-        <div onClick={addToCartHandler}>
-          <Button type="add" message="Add to cart" />
-        </div>
+        <Button type="add" message="Add to cart" onClick={addToCartHandler} />
       </div>
     </div>
   );

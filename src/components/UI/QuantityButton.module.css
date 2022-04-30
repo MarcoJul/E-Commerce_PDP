@@ -33,5 +33,6 @@
 @media screen and (max-width: 1050px) {
   .quantityButton {
     width: 100%;
+    max-width: none;
   }
 }

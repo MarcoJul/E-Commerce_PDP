@@ -20,3 +20,9 @@
   background-color: hsl(26, 80%, 50%);
   transition: all 0.4s;
 }
+@media screen and (max-width: 1050px) {
+  .button {
+    width: 100%;
+    max-width: none;
+  }
+}
